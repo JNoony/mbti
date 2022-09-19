@@ -32,7 +32,7 @@
     }
 }
 
-/* main,sub 공통 */
+/* 공통 */
 html,body{
     width: 100%;
     height: 100%;
@@ -44,17 +44,21 @@ body{
     font-size: 16px;
 }
 section{
-    margin-top: 100px;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
+}
+img{
+    width: 100%;
 }
 
 
 /* main */
-.main .wrap{ 
+.wrap{ 
     display: flex;
     flex-direction: column;
-    max-width: 700px;
+    max-width: 500px;
+    width: auto;
 }
 
 .wrap_title{
@@ -142,7 +146,7 @@ section{
 .wrap_weniv img{ width: 100%; }
 
 
-/* sub */
+/* sub :: 선택페이지 */
 .survey{}
 .survey .wrap{}
 
@@ -168,6 +172,7 @@ section{
 }
 .frm_answer>div{
     line-height: 2;
+    width: 100%;
 }
 
 .frm_btn {
@@ -189,3 +194,16 @@ section{
     /* box-shadow: 2px 4px 0.5em rgba(0,0,0,0.2); */
     transform: translateY(2px);
 }
+
+
+/* result :: 결과 페이지 */
+.result{}
+
+
+.wrap_contents{
+
+}
+
+
+
+

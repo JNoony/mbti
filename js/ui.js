@@ -1,5 +1,14 @@
-function htmlChange(){
-    document.body.innerHTML = '<section class="survey" include-mbti="sub.html"></section>'
+/**
+ * ui
+*/
+var htmlPage = {
+    sub:{ class:'survey', include:'sub.html'},
+    result:{ class:'result', include:'result.html' }
+}
+function htmlChange(name){
+    document.body.innerHTML = `<section class="${htmlPage[name].class}" 
+                                        include-mbti="${htmlPage[name].include}"></section>`
+    // document.body.innerHTML = '<section class="survey" include-mbti="sub.html"></section>'
     includeHTML();
 }
 
@@ -16,3 +25,5 @@ function prevPage(target){
     if( prev === undefined || prev === null ) return false;
     window.scrollTo({ top: prev.offsetTop-100, behavior: "smooth" });
 }
+
+
