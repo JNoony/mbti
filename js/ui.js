@@ -2,13 +2,13 @@
  * ui
 */
 var htmlPage = {
-    sub:{ class:'survey', include:'sub.html'},
+    sub   :{ class:'survey', include:'sub.html'},
     result:{ class:'result', include:'result.html' }
 }
 function htmlChange(name){
-    document.body.innerHTML = `<section class="${htmlPage[name].class}" 
-                                        include-mbti="${htmlPage[name].include}"></section>`
-    // document.body.innerHTML = '<section class="survey" include-mbti="sub.html"></section>'
+    document.body
+            .innerHTML = `<section class="${htmlPage[name].class}" 
+                                   include-mbti="${htmlPage[name].include}"></section>`;
     includeHTML();
 }
 
